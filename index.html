@@ -92,6 +92,8 @@
         input[type=number]::-webkit-inner-spin-button, 
         input[type=number]::-webkit-outer-spin-button { 
             -webkit-appearance: none; margin: 0; 
+
+
         }
     </style>
     <!-- Firebase Imports -->
@@ -128,10 +130,10 @@
 
         // --- Data ---
         const PRODUCTS = [
-            { id: 'p1', name: 'PHOENIX MK.II', price: 120.00, tagline: 'RISE FROM ASHES', desc: 'Aerospace-grade aluminum body with haptic feedback engine.', image: 'https://placehold.co/800x800/1a1a1a/E11D48?text=PHOENIX' },
-            { id: 'p2', name: 'OBSIDIAN STEALTH', price: 85.00, tagline: 'UNSEEN POWER', desc: 'Matte black ceramic coating. Zero light leakage. The perfect stealth vape.', image: 'https://placehold.co/800x800/000000/333333?text=OBSIDIAN' },
-            { id: 'p3', name: 'BeyonD The Space', price: 2800.00, tagline: 'PURE VAPOR', desc: 'Glass-lined chamber for unadulterated flavor profiles.', image: 'https://raw.githubusercontent.com/Mr-M4sh/Bramanda-Official.github.io/refs/heads/main/cherry%20cola.png', featured: true },
-            { id: 'p4', name: 'CRIMSON CORE', price: 95.00, tagline: 'HEART OF FIRE', desc: 'Limited edition red anodized finish. High-discharge battery system.', image: 'https://placehold.co/800x800/4a0404/E11D48?text=CRIMSON' },
+            { id: 'p1', name: 'ELFBAR 5000', price: 699.00, tagline: 'RISE FROM ASHES', desc: 'Aerospace-grade aluminum body with haptic feedback engine.', image: 'https://raw.githubusercontent.com/Mr-M4sh/Bramanda-Official.github.io/refs/heads/main/elf%20triple%20berry.png' },
+            { id: 'p2', name: 'GUAVA OBSIDIAN STEALTH', price: 699.00, tagline: 'UNSEEN POWER', desc: 'Matte black ceramic coating. Zero light leakage. The perfect stealth vape.', image: 'https://raw.githubusercontent.com/Mr-M4sh/Bramanda-Official.github.io/refs/heads/main/guva.png' },
+            { id: 'p3', name: 'Straw the berry', price: 699.00, tagline: 'PURE VAPOR', desc: 'Glass-lined chamber for unadulterated flavor profiles.', image: 'https://raw.githubusercontent.com/Mr-M4sh/Bramanda-Official.github.io/refs/heads/main/strawberry%20kiwi.png', featured: true },
+            { id: 'p4', name: 'The legendary Apple', price: 699.00, tagline: 'HEART OF FIRE', desc: 'Limited edition red anodized finish. High-discharge battery system.', image: 'https://raw.githubusercontent.com/Mr-M4sh/Bramanda-Official.github.io/refs/heads/main/sour%20apple.png' },
         ];
 
         // --- Logic Exports ---
@@ -194,8 +196,41 @@
         <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
             <div class="text-center md:text-left">
                 <h2 class="font-display text-3xl font-bold tracking-tighter mb-2">BRAMANDA</h2>
-                <p class="font-tech text-gray-500 tracking-wide text-sm">EST. 2024 // TOKYO - NEW YORK</p>
+                <p class="font-tech text-gray-500 tracking-wide text-sm">EST. 2024 // NEPAL - KATHMANDU</p>
                 <p class="text-xs text-gray-700 mt-4">ID: <span id="user-id-display">Initializing...</span></p>
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-6">
+                <!-- Contact & Social Links -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-brand-red" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <a href="mailto:bramandaofficial@gmail.com" class="font-tech text-gray-400 hover:text-brand-red transition text-sm">info@bramanda.com</a>
+                    </div>
+                </div>
+                <!-- Social Icons -->
+                <div class="flex gap-6">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bramanda.official/" target="_blank" rel="noopener noreferrer" class="group relative">
+                        <svg class="w-6 h-6 text-gray-500 group-hover:text-brand-red transition" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 100-8 4 4 0 000 8zm4.965-10.322a1.44 1.44 0 110.001 2.881 1.44 1.44 0 01-.001-2.881z"/>
+                        </svg>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@bramanda.official?lang=en" target="_blank" rel="noopener noreferrer" class="group relative">
+                        <svg class="w-6 h-6 text-gray-500 group-hover:text-brand-red transition" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.68v13.67a2.82 2.82 0 11-2.84-2.84c.31 0 .61.025.91.075V9.49a6.1 6.1 0 00-.91-.075h-.02a6.15 6.15 0 00-6.14 6.15 6.15 6.15 0 006.14 6.15 6 6 0 006-6V8.34a7.97 7.97 0 005.93 2.56V9.69a4.8 4.8 0 01-3.77-3z"/>
+                        </svg>
+                    </a>
+                    <!-- Email/Contact Icon -->
+                    <a href="mailto:bramandaofficial@gmail.com" class="group relative">
+                        <svg class="w-6 h-6 text-gray-500 group-hover:text-brand-red transition" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="flex space-x-8">
                 <a href="#" class="font-tech text-gray-500 hover:text-brand-red transition uppercase text-sm">Legal</a>
@@ -268,7 +303,7 @@
                     
                     <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
                         <p class="font-tech text-brand-red tracking-[0.3em] mb-4 text-sm animate-pulse">SYSTEM ONLINE // WELCOME USER</p>
-                        <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tighter mix-blend-difference mb-6">
+                        <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tighter mix-blend-difference mb-6 flex flex-col items-center justify-center">
                             THE <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">UNDISCOVERED</span>
                         </h1>
                         <p class="font-body text-gray-400 max-w-xl mx-auto mb-10 text-lg leading-relaxed">
@@ -496,8 +531,14 @@
              document.getElementById('user-id-display').textContent = uid ? uid.slice(0, 8) : 'GUEST';
         });
 
-        // Start App
-        router('home');
+        // Start App - Wait for DOM to be fully ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                router('home');
+            });
+        } else {
+            router('home');
+        }
 
     </script>
 </body>
